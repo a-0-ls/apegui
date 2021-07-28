@@ -125,7 +125,7 @@ pip requirements.txt
 The GUI comes in a five layer format. This includes downsampling the videos to the required size of  532* 300 pixels for efficient analysis  using the weights of a trained DLC model to analyze the videos.This creates hdf format files with pixel positions(x,y) of the 28 labels for every frame with their likelihood value of detection ( ranging between 0 and 1) for each frame in the video.
 The GUI works like this:
  
-Frame1:** Downsample**
+Frame1:**Downsample**
 
 Click and select the folder with videos to downsample and change the frame rates to 25fps.While selecting folders, make sure that the names do not include special characters or keyword "DLC" or "GHC".This applies in selecting all folders.
 Also, the video format has to be of the type  processed by [opencv2](https://docs.opencv.org/4.5.2/dd/d43/tutorial_py_video_display.html)
