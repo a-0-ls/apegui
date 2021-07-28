@@ -128,7 +128,7 @@ Frame1:** Downsample**
 
 Click and select the folder with videos to downsample and change the frame rates to 25fps.
 
-![alt text](https://github.com/a-0-ls/apegui/tree/master/imagesblob/s1.PNG[branch]/image.jpg?raw=true)
+![Imgur](https://imgur.com/Ovgb63s)]
 
 
 <!-- ROADMAP -->
