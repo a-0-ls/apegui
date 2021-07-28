@@ -133,7 +133,7 @@ The videoname also should not contain weird charaters such as( *,^,~)
 
 ![image](https://user-images.githubusercontent.com/87041234/127318565-86e787c4-0649-4ca2-a7aa-443827431f71.png)
 
-Frame2:** Analyze**
+Frame2:**Analyze**
 
 ![image](https://user-images.githubusercontent.com/87041234/127322410-02d24ec6-f697-4124-b37d-6c43a2c0b248.png)
 
@@ -154,14 +154,19 @@ The publication discusses how to choose these threshold values. It is recommende
 
 Threshold is the likelihood value for detection--Keep it high as 0.99 
 
-_ Outputs_
+_Outputs_:
 
 1.It creates a new-subfolder called plots.For each video two plots are created which can be used to visually check the presence of GHC.
   a)Plot shows likelihood value across the frames for all body-parts
-  ![image](https://user-images.githubusercontent.com/87041234/127325879-1225c9be-184d-407b-80fb-39780ef65abd.png)
-
   b)Plots labels in consecutive N frames across all frames
+   **Example plot of GHC:**
+  ![image](https://user-images.githubusercontent.com/87041234/127325879-1225c9be-184d-407b-80fb-39780ef65abd.png)
   ![image](https://user-images.githubusercontent.com/87041234/127326009-d30187e6-4a1d-437b-9af8-7495b1a2acc2.png)
+   **Example plot of Non-GHC:**
+   ![image](https://user-images.githubusercontent.com/87041234/127326578-2a42b4f9-a2bf-44ad-a788-f7c285b40c2e.png)
+   ![image](https://user-images.githubusercontent.com/87041234/127326639-f58eed17-68b3-42d6-aeaf-94c29045a525.png)
+
+  
 
 
 2.In another sub-folder dataframes, two csv files are created:
