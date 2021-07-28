@@ -122,7 +122,13 @@ pip requirements.txt
 ## Usage
 
 The GUI comes in a five layer format. This includes downsampling the videos to the required size of  532* 300 pixels for efficient analysis  using the weights of a trained DLC model to analyze the videos.This creates hdf format files with pixel positions(x,y) of the 28 labels for every frame with their likelihood value of detection ( ranging between 0 and 1) for each frame in the video.
+The GUI works like this:
+ 
+Frame1:** Downsample**
 
+Click and select the folder with videos to downsample and change the frame rates to 25fps.
+
+![alt text](https://github.com/a-0-ls/apegui/tree/master/imagesblob/s1.PNG[branch]/image.jpg?raw=true)
 
 
 <!-- ROADMAP -->
