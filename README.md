@@ -70,7 +70,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://imgur.com/Ovgb63s)
+![image](https://user-images.githubusercontent.com/87041234/127318565-86e787c4-0649-4ca2-a7aa-443827431f71.png)
+
 
 In this work, we present two methods wrapped into a GUI that can primarily detect Grooming Hand Clasp(GHC) postures among  Chimpanzees in the wild.The methods use underlying properties of the ‘GHC’ converted into a pseudo-algorithm.
 
