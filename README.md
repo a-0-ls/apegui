@@ -127,9 +127,72 @@ The GUI works like this:
  
 Frame1:** Downsample**
 
-Click and select the folder with videos to downsample and change the frame rates to 25fps.
+Click and select the folder with videos to downsample and change the frame rates to 25fps.While selecting folders, make sure that the names do not include special characters or keyword "DLC" or "GHC".This applies in selecting all folders.
+Also, the video format has to be of the type  processed by [opencv2](https://docs.opencv.org/4.5.2/dd/d43/tutorial_py_video_display.html)
+The videoname also should not contain weird charaters such as( *,^,~)
 
-![Imgur](https://imgur.com/Ovgb63s)]
+![image](https://user-images.githubusercontent.com/87041234/127318565-86e787c4-0649-4ca2-a7aa-443827431f71.png)
+
+Frame2:** Analyze**
+
+![image](https://user-images.githubusercontent.com/87041234/127322410-02d24ec6-f697-4124-b37d-6c43a2c0b248.png)
+
+
+The downloaded folder contains the weights of our GHC model.Please do NOT change the folder name or the sub-folder's name.You can keep the folder anywhere in the computer, all you have to do is to select the folder when prompted.The analysis takes time.
+.H5 and.csv files are the output format of our analysis.It is created in the same folder “”.
+
+Frame3: **Detects**
+
+![image](https://user-images.githubusercontent.com/87041234/127322443-8347d8f3-2fbd-4c5a-a570-c81894c47587.png)
+
+This is method 1, that is mentioned in the publication.
+Here, there are two parameters that can be tuned :
+	1.Threshold Value                  : Between 0 and 1
+  2.No of Consecutive frames  : This looks for N consecutive frames with the specified threshold values.
+
+The publication discusses how to choose these threshold values. It is recommended to use 25 frames as the minimum number for the number of consecutive framesparameter.
+
+Threshold is the likelihood value for detection--Keep it high as 0.99 
+
+_ Outputs_
+
+1.It creates a new-subfolder called plots.For each video two plots are created which can be used to visually check the presence of GHC.
+  a)Plot shows likelihood value across the frames for all body-parts
+  ![image](https://user-images.githubusercontent.com/87041234/127325879-1225c9be-184d-407b-80fb-39780ef65abd.png)
+
+  b)Plots labels in consecutive N frames across all frames
+  ![image](https://user-images.githubusercontent.com/87041234/127326009-d30187e6-4a1d-437b-9af8-7495b1a2acc2.png)
+
+
+2.In another sub-folder dataframes, two csv files are created:
+   a)ghc_dataframe.csv (contains 1.Videonames, 2.Classification: GHC or No, 3.Confidence: Certain::Not_GHC, Uncertain/Grooming,Certain::GHC, 4.Start time of GHC,
+                       5.Threshold values chosen, 6.Maximum number of consecutively occuring labels)
+                      
+#TIP: Here, if start time is “None” and Confidence is “Uncertain/Grooming” ,then most likely it is also not a GHC.This makes classification of GHC vs non-GHC more accurate.
+
+   b)  ghc_file_names.csv : Is just a csv with names of videos with GHC
+
+Frame4: **Classify**
+
+![image](https://user-images.githubusercontent.com/87041234/127324451-057ef33d-0082-4a89-b43c-2d1f5ab4d423.png)
+
+Move the ‘Original’ videos without GHC to a new folder.
+
+
+Frame5: **Analyze 2**
+
+![image](https://user-images.githubusercontent.com/87041234/127324476-d0909f9b-933d-44af-a3dc-94156a1221b0.png)
+
+This is the method 2 described in papaer.Compared to method 1, here the outputs tend to have high false negatives and low false positives.
+This can be used together with method 1 where, you use a leninet threshold to for method 1 and a stricter one here.
+
+_Outputs_: Two csv files 
+
+1.ghc_detections.csv file with number of detections of GHC and Videoname
+2.non_ghcdetections.csv file with non ghc video names
+3.ghc_detections_details: file with Videoname, start time, end time, duration ,seven most detected body parts in order and total number of frames detected for videos with GHC.
+
+
 
 
 <!-- ROADMAP -->
