@@ -1,0 +1,8 @@
+,Video_Name,Likelihood,frames_detected,Start_time(s),End_time(s),Duration_of_ghc(s),Seven most detected body parts in order
+0,N55_fulldownsampled,0.0,788,0.0,31.52,31.52,"['left_arm_to_body', 'left_elbowinside', 'left_elbowoutside', 'left_finger_1', 'left_finger_2', 'left_finger_endpoint', 'left_finger_endpoint2']"
+1,LOU_CHI_2downsampled,0.0,2545,0.0,101.8,101.8,"['left_arm_to_body', 'left_elbowinside', 'left_elbowoutside', 'left_finger_1', 'left_finger_2', 'left_finger_endpoint', 'left_finger_endpoint2']"
+2,NM2U00176_2_fulldownsampled,0.0,1269,0.0,50.76,50.76,"['left_arm_to_body', 'left_elbowinside', 'left_elbowoutside', 'left_finger_1', 'left_finger_2', 'left_finger_endpoint', 'left_finger_endpoint2']"
+3,055_not_ghc_trim,0.0,5088,0.0,203.52,203.52,"['left_arm_to_body', 'left_elbowinside', 'left_elbowoutside', 'left_finger_1', 'left_finger_2', 'left_finger_endpoint', 'left_finger_endpoint2']"
+4,non_ghc_trim,0.0,8413,0.0,336.52,336.52,"['left_arm_to_body', 'left_elbowinside', 'left_elbowoutside', 'left_finger_1', 'left_finger_2', 'left_finger_endpoint', 'left_finger_endpoint2']"
+5,N206_wristdownsampled,0.0,1630,0.0,65.2,65.2,"['left_arm_to_body', 'left_elbowinside', 'left_elbowoutside', 'left_finger_1', 'left_finger_2', 'left_finger_endpoint', 'left_finger_endpoint2']"
+6,N02_wristdownsampled,0.0,734,0.0,29.36,29.36,"['left_arm_to_body', 'left_elbowinside', 'left_elbowoutside', 'left_finger_1', 'left_finger_2', 'left_finger_endpoint', 'left_finger_endpoint2']"

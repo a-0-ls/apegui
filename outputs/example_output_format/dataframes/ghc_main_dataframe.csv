@@ -1,0 +1,8 @@
+,File_name,Prediction,Confidence,Max_consecutive_labels,Time_Points
+0,N55_fulldownsampled,GHC,Certain::GHC,5,['None']
+1,LOU_CHI_2downsampled,GHC,Certain::GHC,16,['None']
+2,NM2U00176_2_fulldownsampled,GHC,Uncertain/Grooming,1,['None']
+3,055_not_ghc_trim,GHC,Uncertain/Grooming,1,['None']
+4,non_ghc_trim,GHC,Certain::GHC,4,['None']
+5,N206_wristdownsampled,GHC,Certain::GHC,9,['None']
+6,N02_wristdownsampled,GHC,Certain::GHC,17,['None']
