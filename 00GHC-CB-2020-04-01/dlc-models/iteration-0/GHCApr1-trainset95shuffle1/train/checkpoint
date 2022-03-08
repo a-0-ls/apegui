@@ -1,0 +1,2 @@
+model_checkpoint_path: "/storage/GHC-CB-2020-04-01/dlc-models/iteration-0/GHCApr1-trainset95shuffle1/train/snapshot-190000"
+all_model_checkpoint_paths: "/storage/GHC-CB-2020-04-01/dlc-models/iteration-0/GHCApr1-trainset95shuffle1/train/snapshot-190000"
